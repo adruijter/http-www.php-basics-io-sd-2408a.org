@@ -6,3 +6,12 @@ body {
     font-family: Verdana;
     background-color: azure;
 }
+
+div {
+    border: 5px solid black;
+    width: 70%;
+    background-color: orange;
+    border-radius: 2em;
+    padding: 1em;
+    color: white;
+}
