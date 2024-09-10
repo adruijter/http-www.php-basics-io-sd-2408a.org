@@ -7,7 +7,20 @@
     <title>Document</title>
 </head>
 <body>
+
+<?php
+    $voornaam = 'Arjan';
+
+    $tussenvoegsel = "de";
+
+    $achternaam = "Ruijter";
+
+    echo "<p>Mijn naam is $voornaam $tussenvoegsel $achternaam</p>";
     
+    echo '<p>Mijn naam is ' . $voornaam . ' ' . $tussenvoegsel . ' ' . $achternaam . '</p>';
+
+?>
+
     <a href="../index.html">Terug</a>
 </body>
 </html>
