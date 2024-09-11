@@ -88,7 +88,7 @@
 
      echo "<p>Het product van $getal1 x $getal2 = $product";
 
-     echo "<p>De deling van $getal1 x $getal2 = $quotient";
+     echo "<p>De deling van $getal1 : $getal2 = $quotient";
 
 
      echo "</div>";
