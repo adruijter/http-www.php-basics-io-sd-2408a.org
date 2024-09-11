@@ -29,9 +29,9 @@
 
     $schoenmaat = 46;
 
-    $getal1 = 36;
+    $getal1 = 4;
 
-    $getal2 = 40;
+    $getal2 = 3;
 
     $som = $getal1 + $getal2;
 
@@ -39,7 +39,16 @@
 
     $product = $getal1 * $getal2;
 
-    $quotient =  $getal1 / $getal2;
+    $quotient =  $getal1/$getal2;
+
+    $macht = $getal1 ** $getal2;
+
+    // Machtsverheffen
+    $macht = pow($getal1, $getal2);
+
+    // Worteltrekken
+    $wortel = sqrt($getal1);
+
 
 
 
@@ -89,6 +98,10 @@
      echo "<p>Het product van $getal1 x $getal2 = $product";
 
      echo "<p>De deling van $getal1 : $getal2 = $quotient";
+
+     echo "<p>$getal1 tot de macht $getal2 = $macht</p>";
+     
+     echo "<p>De tweede machts wortel uit $getal1 = $wortel</p>";
 
 
      echo "</div>";
