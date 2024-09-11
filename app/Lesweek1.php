@@ -25,6 +25,24 @@
 
     $woonplaats = "Amsterdam";
 
+    $leeftijd = 56;
+
+    $schoenmaat = 46;
+
+    $getal1 = 36;
+
+    $getal2 = 40;
+
+    $som = $getal1 + $getal2;
+
+    $verschil = $getal1 - $getal2;
+
+    $product = $getal1 * $getal2;
+
+    $quotient =  $getal1 / $getal2;
+
+
+
     /** 
      *  Dit is een voorbeeld van een docblock comment
      *  ook docblocks kunnen over meerdere regels 
@@ -35,7 +53,7 @@
     echo "<div>";
     echo "<p>Mijn naam is $voornaam $tussenvoegsel $achternaam</p>";
     
-    // echo '<p>Mijn naam is ' . $voornaam . ' ' . $tussenvoegsel . ' ' . $achternaam . '</p>';
+    echo '<p>Mijn naam is ' . $voornaam . ' ' . $tussenvoegsel . ' ' . $achternaam . '</p>';
 
     /**
      * Opdracht maak drie variabelen straatnaam, huisnummer en woonplaats en echo daarmee de 
@@ -45,7 +63,37 @@
      */
 
     echo "<p>Ik woon in de $straatnaam op $huisnummer te $woonplaats</p>";
+
+    echo "<p>Mijn leeftijd is $leeftijd en mijn schoenmaat is $schoenmaat</p>";
     echo "</div>";
+
+    /**
+     * Maak twee variabele leeftijd en schoenmaat en schrijf deze waarden op het scherm
+     * 
+     */
+
+    /**
+     * Maak twee variabelen waar je getallen in kunt zetten en tel deze getallen op
+     * 
+     * De som van ... en ... is ....
+     * 
+     * Doe dit ook voor aftrekken (-) vermenigvuldigen (*) en delen (/)
+     */
+
+     echo "<div>";
+
+     echo "<p>De som van $getal1 + $getal2 is $som</p>";
+
+     echo "<p>Het verschil van $getal1 - $getal2 = $verschil";
+
+     echo "<p>Het product van $getal1 x $getal2 = $product";
+
+     echo "<p>De deling van $getal1 x $getal2 = $quotient";
+
+
+     echo "</div>";
+
+    
 ?>
 
     <a href="../index.html">Terug</a>
