@@ -95,7 +95,80 @@
     }
 
 
+    /**
+     * Maak een associatief array met daarin je 8 favoriete sneakers inclusief prijs. Gebruik een 
+     * foreach-loop en de output moet er als volgt uitzien:
+     * 
+     * Mijn favoriete sneakers
+     * ***********************
+     * Schoen 1: Adidas - 231,45 euro
+     * Schoen 2: ......
+     * enz.....
+     * Schoen 8: Nike - 187,67 euro
+     */
+
+     $sneakers = array(
+                    'Converse' => '245,23', 
+                    'Adidas' => '234,35',
+                    'Reekbok' => '198,00',
+                    'Puma' => '34,98',
+                    'Vans' => '124',
+                    'Asics'=> '456,23',
+                    'Nike' => '457,97',
+                    'New Balance' => '0,98'
+                 );
+
+     echo "<p>Mijn favoriete sneakers</p>";
+     echo "*******************";
+
+     $nummering = 0;
+     foreach ($sneakers as $key => $price) {
+        // $nummering = $nummering + 1;
+        $nummering++;
+        echo "<p>Schoen $nummering: $key - $price&euro;</p>";  // ampersand &
+     }
+
+
+     /**
+      * Dit is een associatief array
+      */
+
+      $persoonsgegevens = array(
+                            'voornaam' => 'Arjan',  //Dit is een sleutel - waarde paar
+                            'tussenvoegsel' => 'de',
+                            'achternaam' => 'Ruijter'
+                         );
+      echo "<p>Mijn naam is: {$persoonsgegevens['voornaam']} {$persoonsgegevens['tussenvoegsel']} {$persoonsgegevens['achternaam']}</p>";
+
+
+      /**
+       * Maak een associatief array met daarin de top 5 snelste auto's ter wereld en 
+       * de topsnelheid daarin vermeld. De output ziet er als volgt uit:
+       * 
+       * ====================================
+       * Top 5 snelste sportauto's ter wereld
+       * ====================================
+       * 1. Bugatti Veyron => 456 km/h 
+       * 2. Fiat Diablo    => 234 km/h
+       * 3. ...........
+       * 
+       */
     
+       $fastestCars = array(
+                        'Koenigsegg Jesko Absolut' => '531 km/u',
+                        'Bugatti Chiron Super Sport 300+' => '490 km/u',
+                        'SSC Tuatara' => '475 km/u',
+                        'Hennessey Venom F5' => '437 km/u',
+                        'Rimec Nevera' => '415 km/u'
+                      );
+
+       echo "======================<br>
+             Top 5 snelste sportauto's ter wereld<br>
+             ======================<br>";
+
+       
+       
+       
 
 
 ?>
