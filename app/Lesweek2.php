@@ -38,6 +38,8 @@
                 'Lion',
                 'Bounty' 
              );
+    
+    echo "Mijn favo snoep is: $snoep[0]";
 
     echo "<p>In mijn top 5 van snoep zit $snoep[6]</p>";
 
@@ -48,6 +50,51 @@
         echo "<li>$item</li>";
     }
     echo "</ol>";
+
+     $snoep = array(
+                'Mars', 
+                'Snickers',
+                'Twix',
+                'Milky Way',
+                'Nuts',
+                'Lion',
+                'Bounty' 
+             );
+
+    echo "<p>In mijn top 5 van snoep zit $snoep[6]</p>";
+
+    echo "<p>Mijn top 7 snoeplijst</p>";
+    echo "<p>==================</p>";
+    echo "<ol>";
+    foreach ($snoep as $item) {
+        echo "<li>$item</li>";
+    }
+    echo "</ol>";
+    
+    /**
+     * Maak een array met een top 5 lijstje met daarin 5 van jou 
+     * favoriete games en gebruik een foreach-loop om deze op het
+     * scherm te zetten. Voor elk spel moet een nummer staan maar
+     * je mag daarvoor geen <ol><li></li></ol> gebruiken
+     */
+
+    $games = array(
+                'Kings Valley',
+                'Tomb Raider',
+                'First Blood',
+                'The Emperor',
+                'Critical feature'
+    );
+
+    echo "<p>Mij top 5 favoriete games</p>";
+    echo "<p>++++++++++++++++++++++</p>";
+    $number = 0;
+    foreach ( $games as $item) {
+        $number = $number + 1;
+        echo "$number. $item<br>";
+    }
+
+
     
 
 
