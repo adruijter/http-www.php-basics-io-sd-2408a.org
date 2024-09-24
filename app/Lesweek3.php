@@ -81,8 +81,8 @@
         4 => 5
      );
 
-     foreach () {
-        
+     foreach ($getallenParen as $getal_1 => $getal_2) {
+        echo berekenSom($getal_1, $getal_2);
      }
 
     ?>
