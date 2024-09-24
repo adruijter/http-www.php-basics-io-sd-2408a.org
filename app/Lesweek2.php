@@ -148,28 +148,47 @@
        * ====================================
        * Top 5 snelste sportauto's ter wereld
        * ====================================
-       * 1. Bugatti Veyron => 456 km/h 
-       * 2. Fiat Diablo    => 234 km/h
-       * 3. ...........
+       * 1. Bugatti Veyron => 456 km/h  // letters rood
+       * 2. Fiat Diablo    => 234 km/h  // letters blauw
+       * 3. ...........                 // letter rood enz..
        * 
        */
     
        $fastestCars = array(
-                        'Koenigsegg Jesko Absolut' => '531 km/u',
-                        'Bugatti Chiron Super Sport 300+' => '490 km/u',
-                        'SSC Tuatara' => '475 km/u',
-                        'Hennessey Venom F5' => '437 km/u',
-                        'Rimec Nevera' => '415 km/u'
+                        'Koenigsegg Jesko Absolut' => '531',
+                        'Bugatti Chiron Super Sport 300+' => '490',
+                        'SSC Tuatara' => '475',
+                        'Hennessey Venom F5' => '437',
+                        'Rimec Nevera' => '415'
                       );
 
        echo "======================<br>
              Top 5 snelste sportauto's ter wereld<br>
              ======================<br>";
+       echo "<ol>";
+       foreach ($fastestCars as $car => $speed) {
+            echo "<li>$car => $speed km/u</li>";
+       }
+       echo "</ol>";
 
-       
-       
-       
 
+       /**
+        * Opdracht 5
+        * ========
+        * Maak een assiatief array met de top 5 sociale mediaplatforms en hun aantal 
+        * gebruiker. Gebruik een foreach-loop. De output ziet er als volgt uit:
+        * 
+        * &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+        * Top 5 sociale media-platforms
+        * -----------------------------
+        * 1. facebook heeft ongeveer 2,9 miljard gebruikers 
+        * 2. Youtube heeft ....
+        * 3. .....
+        * 4. enz.....
+        */
+       
+       
+        
 
 ?>
 
