@@ -34,12 +34,12 @@
     function noemMijnNaam($voornaam, $tussenvoegsel = NULL, $achternaam = NULL)
     {
         //Dit noem het code block
-        echo "<p>Mijn naam is $voornaam $tussenvoegsel $achternaam</p>";
+        return "<p>Mijn naam is $voornaam $tussenvoegsel $achternaam</p>";
     }
 
-    noemMijnNaam('Bert', 'van', 'Marwijk');
-    noemMijnNaam('Arjan', 'de', 'Ruijter');
-    noemMijnNaam('Frans');
+    echo noemMijnNaam('Bert', 'van', 'Marwijk');
+    echo noemMijnNaam('Arjan', 'de', 'Ruijter');
+    echo noemMijnNaam('Frans');
 
     /**
      * Maak een functie berekenSom() die twee getallen kan optellen. Het is verplicht om
@@ -50,7 +50,40 @@
      * De som van 4 + 2 = 6
      */
 
-     
+     function berekenSom($getal_1, $getal_2)
+     {
+        $som = $getal_1 + $getal_2;
+        return "<p>De som van $getal_1 + $getal_2 = $som</p>";
+     }
+
+     echo berekenSom(123, 37);
+     echo berekenSom(12, 7);
+     echo berekenSom(13, 3);
+     echo berekenSom(3, 7);
+     echo berekenSom(33, 37);
+
+    /**
+     * Maak een associatief array met twee getallen als sleutel-waarde paar. Het array
+     * heeft in totaal tien van deze sleutel-waarde paren. Gebruik een foreach-loop
+     * om de som van deze twee getallen als sleutel-waarde paar op het scherm te krijgen.
+     */
+
+     $getallenParen = array(
+        3 => 5,
+        6 => 7,
+        8 => 56,
+        9 => 12,
+        34 => 32,
+        88 => 45,
+        42 => 2,
+        123 => 56,
+        45 => 43,
+        4 => 5
+     );
+
+     foreach () {
+        
+     }
 
     ?>
 </body>
