@@ -129,6 +129,21 @@
       */
 
       
+      function tafelForLoop($getal, $start, $eind)
+      {
+            echo "<h3>Tafel van $getal</h3>";
+
+            for ($i = $start; $i <= $eind; $i++) {
+                $product = $i * $getal;
+                echo "<p>$i x $getal = $product</p>";
+            }
+      }
+
+      tafelForLoop(5, 10, 20);
+      tafelForLoop(24, 2, 32);
+
+      
+
 
 
     ?>
