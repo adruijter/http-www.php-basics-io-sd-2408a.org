@@ -142,7 +142,43 @@
       tafelForLoop(5, 10, 20);
       tafelForLoop(24, 2, 32);
 
-      
+      /**
+       * Maak een functie die controleert of een automerk in een array zit
+       * De functie krijgt een array mee en een automerk en als het automerk
+       * in het array zit krijg je de melding "De auto is aanwezig". Wanneer 
+       * het automerk niet in het array zit krijg je de melding "De auto is niet aanwezig"
+       * 
+       * $autos = ['Mercedes', 'Audi']
+       * 
+       * Gebruik het voorbeeld van W3schools.com: 
+       * https://www.w3schools.com/php/func_array_in_array.asp
+       * 
+       * merkAutoAanwezig($autos, 'Volkswagen');
+       * 
+       * Output:
+       * De auto is niet aanwezig.
+       */
+
+       $autos = array(
+            'Volkswagen',
+            'Mercedes',
+            'Audi',
+            'Peugeot',
+            'Tesla',
+            'Alfa Romeo',
+            'Ford'
+       );
+
+       
+       function autoInArray($array, $searchCar) {
+           if ( in_array($searchCar, $array) ) {
+                echo "De auto $searchCar is aanwezig";
+           } else {
+                echo "De auto $searchCar is niet aanwezig";
+           }
+       }
+
+       autoInArray($autos, 'peugeot');
 
 
 
