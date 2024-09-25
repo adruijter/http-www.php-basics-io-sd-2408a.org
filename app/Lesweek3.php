@@ -85,6 +85,52 @@
         echo berekenSom($getal_1, $getal_2);
      }
 
+     /* Maak een functie die de tafel van 3 afbeeld op het scherm
+        Gebruik hiervoor een array die de getallen 1 t/m 10 als data heeft
+
+        tafel(3)
+        output:
+        1 x 3 = 3
+        2 x 3 = 6
+        enz....
+        10 x 3 = 30    
+     
+     */
+
+    
+    
+    function tafel($getal)
+    {
+        echo "<h3>Tafel van $getal</h3>";
+
+        // Dit is een array met de getallen van 1 t/m 10
+        $getallen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // We doorlopen het array met een foreach-loop
+        foreach ($getallen as $item) {
+            $product = $item * $getal;
+            echo "<p>$item x $getal = $product</p>";
+        }
+     }
+
+     tafel(3);
+     tafel(5);
+     tafel(13);
+
+     for ($i = 11; $i <= 15; $i++) {
+        echo "<p>$i</p>";
+     }
+
+     /**
+      * Maak een functie met een for-loop die de tafel kan weergeven van
+      * elke willekeurig getal. Zorg er ook voor dat niet alleen de tafelwaarden
+      * van 1 t/m 10 kunnen worden weergegeven maar ook van elke willekeurige andere
+      * waarden (voorbeeld, de tafel van 8 die loopt van 34 t/m 56 )
+      */
+
+      
+
+
     ?>
 </body>
 </html>
