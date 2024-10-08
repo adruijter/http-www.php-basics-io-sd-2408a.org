@@ -65,7 +65,7 @@
            * Er bestaat ook de switch-case controlestructuur
            */
 
-        $deelVanDeDag = 'zondag';
+        $deelVanDeDag = 'ochtend';
 
         switch ($deelVanDeDag) {
             case 'ochtend': 
@@ -103,7 +103,7 @@
          * } 
          */
 
-        $userrole = 'slkdjslk';
+        $userrole = 'Administrator';
 
         switch ($userrole) {
             case 'Administrator':
@@ -121,6 +121,21 @@
             default:
                 echo '<p>Welkom terug</p>';          
         }
+
+        /**
+         * Maak een funcie diplomaChecker($opleiding) met daarin
+         * een switch - case controlestructuur die aangeeft welke
+         * vooropleiding je heb gehaald. De keuze is:
+         * VMBO TL, VMBO gemengd, VMBO Kader, VMBO Basis, HAVO en VWO
+         * 
+         * ALs de opleiding er niet bij zit dan is de output:
+         * Uw opleiding is niet bekent.
+         * 
+         * Voorbeelden
+         * 
+         * echo diplomaChecker('VMBO TL'); //Output: Ik heb mijn diploma VMBO TL behaald.
+         * echo diplomaChecker('Basisschool'); /Output: Uw opleiding is niet bekent.
+         */
 
 
     ?>
