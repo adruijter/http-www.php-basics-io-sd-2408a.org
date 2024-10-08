@@ -170,13 +170,104 @@
          echo diplomaChecker('Basisschool');
 
     
-    if ($_POST['submit']) {
+    if (isset($_POST['submit'])) {
         echo diplomaChecker($_POST['schooltype']);
     }
 
+    /**
+     * while - loop is een loop die meerdere keren herhaald 
+     */
 
-    ?>
+    $number = 0;
+    while ($number < 6) {
+        echo "<p>$number</p>";
+        $number++;
+    }
+
+    /**
+     * Maak een indexed array genaamd groenten en zet daar
+     * 5 groentesoorten in. Geef de groentesoorten weer  op 
+     * het scherm. Gebruik daarvoor een while - loop
+     * Extra: als we het array uitbreiden met een nieuwe waarde
+     * dan moet deze waarde ook meteen worden afgebeeld op het scherm
+     * pas de code aan. gebruik:
+     * https://www.w3schools.com/php/php_ref_array.asp
+     * 
+     * Tip: $groenten[0] heeft als output de eerste waarde in het array
+     */
+
+    //                   0           1           2           3               4          5           6
+     $groenten = array('Mais', 'Aardappel', 'Komkommer', 'Courgette', 'Spinazie', 'Spruitjes', 'Doperwten');
+
+     
+    $index = 0;
+    while ($index < count($groenten)) {
+        echo "<p>$groenten[$index]</p>";
+        $index++;
+    }
+
+    echo '<hr>';
+    // $index--, Andere startwaarde $index, nieuwe voorwaarde maken wanneer de loop stopt
+
+    $index = 6;
+    while ($index >= 0) {
+        echo "<p>$groenten[$index]</p>";
+        $index--;
+    }
+
+    /**
+     * do - while
+     */
+
+     $index = 1;
+     do {
+        echo "<p>$index</p>";
+        $index++;
+     } while ($index <= 20);
+
+
+     /**
+      * Tel de getallen van 0 t/m 20 bij elkaar op gebruik daarvoor een do-while loop
+      */
+
+     $index = 0;
+     $resultaat = 0; 
+     do {
+        $resultaat = $resultaat + $index;
+        $index++;
+     } while ($index <= 20);
+
+     echo "De som van de getallen 1 t/m 20 = $resultaat";
+
+
+     /**
+      * De for-loop
+      */
+
+      for ($i = 0; $i < 20; $i++) {
+        echo "<p>$i</p>";
+      }
+
+      /**
+       * Maak een functie met een indexed array $fruit 
+       * met daarin 5 fruitItems
+       * Gebruik een for - loop om te checken of het aan 
+       * de functie meegegeven fruititem in het array zit
+       * 
+       * Voorbeeld:
+       * 
+       * echo fruitChecker('Banaan'); //Output Banaan zit in het array
+       * echo fruitChecker('Kersen'); //Output Kersen zijn onbekend
+       */
     
+    
+    ?>
+
+
+
+
+
+
     <form action="Lesweek4.php" method="post">
         <select name="schooltype">
             <option value="-">-- Kies een vooropleiding --</option>
