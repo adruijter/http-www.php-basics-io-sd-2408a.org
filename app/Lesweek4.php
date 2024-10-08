@@ -137,8 +137,55 @@
          * echo diplomaChecker('Basisschool'); /Output: Uw opleiding is niet bekent.
          */
 
+         function diplomaChecker($opleiding) {
+
+            switch ($opleiding) {
+                case 'VMBO TL':
+                    return '<p>Ik heb mijn diploma VMBO TL behaald</p>';
+                    break;
+                case 'VMBO Gemengd':
+                    return '<p>Ik heb mijn diploma VMBO Gemengd behaald</p>';
+                    break;
+                case 'VMBO Kader':
+                    return '<p>Ik heb mijn diploma VMBO Kader behaald</p>';
+                    break;
+                case 'VMBO Basis':
+                    return '<p>Ik heb mijn diploma VMBO Basis behaald</p>';
+                    break;
+                case 'HAVO':
+                    return '<p>Ik heb mijn HAVO diploma behaald</p>';
+                    break;
+                case 'VWO':
+                    return '<p>Ik heb mijn VWO diploma behaald</p>';
+                    break;
+                default:
+                    return '<p>Uw opleiding is bij ons niet bekent</p>';
+
+            }
+
+         }
+
+         echo diplomaChecker('VMBO TL');
+         echo diplomaChecker('VMBO Basis');
+         echo diplomaChecker('Basisschool');
+
 
     ?>
+
+
+    <form action="Lesweek4.php" method="post">
+        <select name="schooltype">
+            <option value="-">-- Kies een vooropleiding --</option>
+            <option value="VMBO TL">VMBO TL</option>
+            <option value="VMBO Gemengd">VMBO Gemengd</option>
+            <option value="VMBO Kader">VMBO Kader</option>
+            <option value="VMBO Basis">VMBO Basis</option>
+            <option value="HAVO">HAVO</option>
+            <option value="VWO">VWO</option>
+        </select>
+
+        <input type="submit" value="Verstuur">
+    </form>
 
 </body>
 </html>
