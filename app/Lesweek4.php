@@ -169,10 +169,14 @@
          echo diplomaChecker('VMBO Basis');
          echo diplomaChecker('Basisschool');
 
+    
+    if ($_POST['submit']) {
+        echo diplomaChecker($_POST['schooltype']);
+    }
+
 
     ?>
-
-
+    
     <form action="Lesweek4.php" method="post">
         <select name="schooltype">
             <option value="-">-- Kies een vooropleiding --</option>
@@ -183,8 +187,7 @@
             <option value="HAVO">HAVO</option>
             <option value="VWO">VWO</option>
         </select>
-
-        <input type="submit" value="Verstuur">
+        <input type="submit" value="Verstuur" name='submit'>
     </form>
 
 </body>
