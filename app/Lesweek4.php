@@ -259,6 +259,8 @@
        * echo fruitChecker('Banaan'); //Output Banaan zit in het array
        * echo fruitChecker('Kersen'); //Output Kersen zijn onbekend
        */
+
+       
     
     
     ?>
