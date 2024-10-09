@@ -296,6 +296,64 @@
         * **
         * *
         */
+
+        echo '<p>' . str_repeat('*', 1) . '</p>';
+        echo '<p>' . str_repeat('*', 2) . '</p>';
+        echo '<p>' . str_repeat('*', 3) . '</p>';
+        echo '<p>' . str_repeat('*', 4) . '</p>';
+        echo '<p>' . str_repeat('*', 5) . '</p>';
+        echo '<p>' . str_repeat('*', 6) . '</p>';
+        echo '<p>' . str_repeat('*', 5) . '</p>';
+        echo '<p>' . str_repeat('*', 4) . '</p>';
+        echo '<p>' . str_repeat('*', 3) . '</p>';
+        echo '<p>' . str_repeat('*', 2) . '</p>';
+        echo '<p>' . str_repeat('*', 1) . '</p>';
+
+        for ($i = 1; $i < 12; $i++) {
+
+            if ( $i < 7) {
+                echo '<p>' . str_repeat('*', $i) . '</p>';
+            } else {
+                echo '<p>' . str_repeat('*', (12 - $i)) . '</p>';
+            }
+        }
+
+        /**
+         * foreach - loop controlestructuur
+         */
+
+        $chips = array('nummer 1' => 'Doritos', 'nummer 2' => 'Nibbit', 'nummer 3' => 'Heartbreakers');
+
+        foreach ($chips as $sleutel => $item) {
+            echo "<p>$sleutel: $item</p>";
+        }
+
+        /**
+         * Maak een associatief array $rapport met 6 vakken het het behaalde 
+         * cijfer. Zorg voor de volgende output met een foreach - loop
+         * 
+         * Output: 
+         * Vak: Nederlands => cijfer: 6.7
+         * Vak: Engels     => cijfer: 8.2
+         * ........enz....
+         */
+
+         $rapport = array(
+                        'Nederlands' => 6.7,
+                        'Engels' => 8.3,
+                        'Rekenen' => 4.8,
+                        'Backend' => 3.2,
+                        'Frontend' => 9.7,
+                        'LOB' => 8.6
+                    );
+
+        foreach ($rapport as $vak => $cijfer) {
+            echo "<p>Vak: $vak => cijfer: $cijfer</p>";
+        }
+
+
+
+
       
 
 
