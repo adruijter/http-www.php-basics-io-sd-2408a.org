@@ -260,7 +260,46 @@
        * echo fruitChecker('Kersen'); //Output Kersen zijn onbekend
        */
 
-       
+       function fruitChecker($fruitItem) 
+       {
+            $fruit = array('Banaan', 'Appel', 'Peer', 'Sinaasappel', 'Druif');
+
+            for ($i = 0; $i < count($fruit); $i++) {
+                if ($fruitItem ==  $fruit[$i] ) {
+                    return "<p>$fruitItem zit in het array</p>";
+                }
+            } 
+
+            return "<p>$fruitItem is niet bekend</p>";
+       }
+
+       echo fruitChecker('Banaan'); //Output Banaan zit in het array
+       echo fruitChecker('Kersen'); //Output Kersen is onbekend
+       echo fruitChecker('Peer'); //Output Kersen is onbekend
+
+       echo '<p>' . str_repeat('@', 1) . '</p>';
+       echo '<p>' . str_repeat('@', 2) . '</p>';
+       echo '<p>' . str_repeat('@', 3) . '</p>';
+
+       /**
+        * Maak met de functie str_repeat() en een for-loop de volgende
+        * ASCII-art
+        * *
+        * **
+        * ***
+        * ****
+        * *****
+        * ******
+        * *****
+        * ****
+        * ***
+        * **
+        * *
+        */
+      
+
+
+
     
     
     ?>
