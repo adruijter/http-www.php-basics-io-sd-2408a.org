@@ -39,9 +39,9 @@
         $teller .= " euro";
         echo "<p>$teller</p>"; //output 3600 euro
 
-        $teller = 100;
+        $teller = 101;
         $teller %= 10;
-        echo "<p>$teller</p>"; //output 0
+        echo "<p>$teller</p>"; //output 1
     ?>
 
     <h5>Increment (++) en de decrement (--) operator</h5>
@@ -88,6 +88,14 @@
          if ($getal < 8) {
             echo "<p>Het getal $getal is kleiner dan 8</p>";
          }
+
+         if (getal <= 8) {
+            echo "<p>Het getal $getal is kleiner of gelijk aan 8</p>";
+         }
+
+         if (getal >= 8) {
+            echo "<p>Het getal $getal is groter of gelijk aan 8</p>";
+         }
     ?>
 
     <h5>De AND (&&) operator (Beide beweringen moeten waar zijn)</h5>
@@ -106,7 +114,21 @@
         if ($getal == 5 || $getal > 5 ) {
             echo "<p>Het getal $getal is groter of gelijk aan 5</p>";
         }
+
+    /**
+     * Maak een functie kilometerVergoeding($aantalKilometer) die berekent
+     * wat de vergoeding is die je krijgt voor een aantal gereden kilometers
+     * voor de eerste 10 km krijg je 0.30 euro
+     * voor de kilometers tussen de 10 en de 30 krijg je 0.5 euro
+     * voor alle kilometers na 30 krijg je 1 euro
+     * 
+     * Voorbeeld:
+     * echo kilometerVergoeding(50);
+     * Output: U heeft 50 kilometer gereden, de vergoeding is 33 euro.
+     */
     ?>
+
+    
 
 </body>
 </html>
