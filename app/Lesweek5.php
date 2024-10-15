@@ -89,11 +89,11 @@
             echo "<p>Het getal $getal is kleiner dan 8</p>";
          }
 
-         if (getal <= 8) {
+         if ($getal <= 8) {
             echo "<p>Het getal $getal is kleiner of gelijk aan 8</p>";
          }
 
-         if (getal >= 8) {
+         if ($getal >= 8) {
             echo "<p>Het getal $getal is groter of gelijk aan 8</p>";
          }
     ?>
@@ -120,12 +120,31 @@
      * wat de vergoeding is die je krijgt voor een aantal gereden kilometers
      * voor de eerste 10 km krijg je 0.30 euro
      * voor de kilometers tussen de 10 en de 30 krijg je 0.5 euro
-     * voor alle kilometers na 30 krijg je 1 euro
+     * voor alle kilometers na 30 km krijg je 1 euro
      * 
      * Voorbeeld:
      * echo kilometerVergoeding(50);
      * Output: U heeft 50 kilometer gereden, de vergoeding is 33 euro.
      */
+
+     function kilometerVergoeding($aantalKilometer) 
+     {
+        $vergoeding = 0;
+        if ($aantalKilometer <= 10) {
+            $vergoeding += 0.30 * $aantalKilometer;
+        } elseif ($aantalKilometer > 10 && $aantalKilometer <= 30) {
+            $vergoeding += 3 + 0.5 * ($aantalKilometer - 10);
+        } else {
+            $vergoeding += 3 + 10 + 1 * ($aantalKilometer - 30);
+        }
+
+        return "<p>U heeft $aantalKilometer km gereden, de vergoeding is $vergoeding euro</p>";
+     }
+
+     echo kilometerVergoeding(50);
+     echo kilometerVergoeding(5);
+     echo kilometerVergoeding(25);
+     echo kilometerVergoeding(35);
     ?>
 
     
