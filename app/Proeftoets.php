@@ -74,11 +74,11 @@
                         return "<p>$getal1 tot de macht $getal2 = $macht</p>";
                         break;
                     default:
-                        return 'U heeft een onbekende bewerking gegeven, probeer het opnieuw';
+                        return '<p>U heeft een onbekende bewerking gegeven, probeer het opnieuw</p>';
     
                 }
             } else {
-                return 'Error! Geef gehele getallen op groter dan 0';
+                return '<p>Error! Geef gehele getallen op groter dan 0</p>';
             }
         }
 
@@ -87,6 +87,55 @@
         echo rekenen(10, 20, "/");
         echo rekenen(2, 3, "**");
         echo rekenen(2, 3, "***");
+        echo rekenen(-2, 3, "+");
+        echo rekenen(2, -3, "+");
+        echo rekenen(1.5, 3, "+");
+        echo rekenen(-2, -3, "+");
+        echo rekenen(2, 3.798, "+");
+
+        echo "<h5>Vraag 4.</h5><hr>";
+
+        function tafelVan($getal, $startGetal = 1, $eindGetal = 10)
+        {
+            if ($startGetal < $eindGetal) {
+                $teller = $startGetal;
+                while ($teller <= $eindGetal) {
+                    $product = $teller * $getal;
+                    echo "<p>$teller x $getal = $product</p>";
+                    $teller++;
+                }
+            } else {
+                echo "<p>U heeft een groter startgetal dan een eindgetal meegeven, dit mag niet</p>";
+            }
+        }
+
+        echo tafelVan(5, 1, 5);
+        echo tafelVan(12, 8, 5);
+        echo tafelVan(8, 5, 12);
+        echo tafelVan(6);
+
+        echo "<h5>Vraag 5.</h5><hr>";
+
+        
+
+        function asciiArt() 
+        {
+            for ($i = 0; $i < 9; $i++) {
+                if ($i < 4) {
+                    echo str_repeat("&nbsp;", $i) . "x" . str_repeat("&nbsp;", 7 - 2 * $i) . "x<br>";
+                }
+                if ($i == 5) {
+                    echo str_repeat("&nbsp;", $i - 1) . "x<br>";
+                }
+                if ($i > 5) {
+                    echo str_repeat("&nbsp;", 9 - $i) . "x" . str_repeat("&nbsp;", 2 * $i - 11) . "x<br>";
+                }
+            }
+        }
+
+        asciiArt();
+        
+       
 
 
 
