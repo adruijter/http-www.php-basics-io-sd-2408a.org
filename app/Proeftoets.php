@@ -9,6 +9,7 @@
 </head>
 <body>
     <h3>Proeftoets</h3>
+    <h5>Vraag 1</h5><hr>
 
     <?php
         $noot = array(
@@ -32,9 +33,28 @@
         }
 
 
-        echo "<hr>2.";
+        echo "<h5>Vraag 2.</h5><hr>";
+
+        $auto = array(
+                    'Mercedes' => 120000,
+                    'Kia' => 12000,
+                    'BMW' => 230000,
+                    'Audi' => 88000,
+        );
+
+        $bedrag = 0;
+        foreach ($auto as $car => $price) {
+            echo "<p>De $car kost $price</p>";
+            $bedrag += $price;
+        }
+        echo "<p>Het totaalbedrag voor het wagenpark is: $bedrag</p>";
+
+
+        echo "<h5>Vraag 3.</h5><hr>";
 
         
+
+
 
 
 
