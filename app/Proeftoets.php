@@ -9,7 +9,7 @@
 </head>
 <body>
     <h3>Proeftoets</h3>
-    <h5>Vraag 1</h5><hr>
+    <h5>Vraag 2</h5><hr>
 
     <?php
         $noot = array(
@@ -33,7 +33,7 @@
         }
 
 
-        echo "<h5>Vraag 2.</h5><hr>";
+        echo "<h5>Vraag 3.</h5><hr>";
 
         $auto = array(
                     'Mercedes' => 120000,
@@ -50,7 +50,7 @@
         echo "<p>Het totaalbedrag voor het wagenpark is: $bedrag</p>";
 
 
-        echo "<h5>Vraag 3.</h5><hr>";
+        echo "<h5>Vraag 4.</h5><hr>";
 
         function rekenen($getal1, $getal2, $bewerking)
         {
@@ -93,7 +93,7 @@
         echo rekenen(-2, -3, "+");
         echo rekenen(2, 3.798, "+");
 
-        echo "<h5>Vraag 4.</h5><hr>";
+        echo "<h5>Vraag 5.</h5><hr>";
 
         function tafelVan($getal, $startGetal = 1, $eindGetal = 10)
         {
@@ -114,7 +114,7 @@
         echo tafelVan(8, 5, 12);
         echo tafelVan(6);
 
-        echo "<h5>Vraag 5.</h5><hr>";
+        echo "<h5>Vraag 6.</h5><hr>";
 
         
 
@@ -134,8 +134,30 @@
         }
 
         asciiArt();
+
+        echo "<h5>Vraag 7.</h5><hr>";
+
         
-       
+        function rechthoek($lengte, $breedte)
+        {
+            if ($lengte < $breedte) {
+                return "<p>De lengte $lengte is kleiner dan de breedte $breedte</p>";
+            } elseif ($lengte < 0 || $breedte < 0) {
+                return "<p>Het zijn negatieve getallen</p>";
+            } elseif (!is_int($lengte) || !is_int($breedte)) {
+                return "<p>Het zijn geen gehele getallen</p>";
+            } else {
+                $oppervlakte = $lengte * $breedte;
+                return "<p>Het oppervlak is: $oppervlakte</p>";
+            }
+        }
+
+        echo rechthoek(8, 5);
+        echo rechthoek(6, 5);
+        echo rechthoek(-4, 5);
+        echo rechthoek(4, -5);
+        echo rechthoek(2, 5);
+        echo rechthoek(2.5, 1);
 
 
 
