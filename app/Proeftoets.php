@@ -52,7 +52,57 @@
 
         echo "<h5>Vraag 3.</h5><hr>";
 
-        
+        function rekenen($getal1, $getal2, $bewerking)
+        {
+            if ($getal1 > 0 && $getal2 > 0 && is_int($getal1) && is_int($getal2)) 
+            {
+                switch($bewerking) {
+                    case '+':
+                        $som = $getal1 + $getal2;
+                        return "<p>De som van $getal1 + $getal2 = $som</p>";
+                        break;
+                    case '*':
+                        $product = $getal1 * $getal2;
+                        return "<p>Het product van $getal1 x $getal2 = $product</p>";
+                        break;
+                    case '/':
+                        $deling = $getal1 / $getal2;
+                        return "<p>De deling van $getal1 / $getal2 = $deling</p>";
+                        break;
+                    case '**':
+                        $macht = $getal1 ** $getal2;
+                        return "<p>$getal1 tot de macht $getal2 = $macht</p>";
+                        break;
+                    default:
+                        return 'U heeft een onbekende bewerking gegeven, probeer het opnieuw';
+    
+                }
+            } else {
+                return 'Error! Geef gehele getallen op groter dan 0';
+            }
+        }
+
+        echo rekenen(3, 8, "+");
+        echo rekenen(1, 5, "*");
+        echo rekenen(10, 20, "/");
+        echo rekenen(2, 3, "**");
+        echo rekenen(2, 3, "***");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
